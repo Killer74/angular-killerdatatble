@@ -11,8 +11,7 @@ export class AppComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) {}
 
-  ngOninit() {
-     debugger;
+  ngOnInit() {
     this.getNews().subscribe(response => {
       console.log(response); 
     });
